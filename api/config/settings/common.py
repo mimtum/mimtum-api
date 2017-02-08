@@ -53,7 +53,6 @@ THIRD_PARTY_APPS = (
     'rest_framework',            # utilities for rest apis
     'rest_framework.authtoken',  # token authentication
     'corsheaders',               # (Cross-Origin Resource Sharing) headers to responses.
-    'location_field.apps.DefaultConfig'
 )
 
 # Apps specific for this project go here.
@@ -264,6 +263,5 @@ REST_FRAMEWORK = {
     ),
 }
 
-# LOCATION_FIELD['provider.google.api_key'] = 'AIzaSyC0vhsF-TM-SDjJ3dvM0euMVT_G66sAP8s'
-
+GOOGLE_MAPS_API_KEY = "AIzaSyC0vhsF-TM-SDjJ3dvM0euMVT_G66sAP8s"
 

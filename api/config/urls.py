@@ -10,9 +10,11 @@ from django.views.generic import TemplateView
 from rest_framework.routers import DefaultRouter
 
 from users.views import UserViewSet
+from classrooms.views import ClassroomViewSet
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet)
+router.register(r'classrooms', ClassroomViewSet)
 
 urlpatterns = [
     # Admin
