@@ -2,6 +2,7 @@
 from __future__ import absolute_import, unicode_literals
 
 from rest_framework import serializers
+from rest_framework.fields import CurrentUserDefault
 from .models import Classroom
 
 
@@ -12,6 +13,3 @@ class ClassroomSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'slug', 'is_busy', 'location', 'current_user',
                   'modified')
         read_only_fields = ('id', 'slug', 'location',)
-
-
-
