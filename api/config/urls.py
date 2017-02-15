@@ -25,8 +25,8 @@ urlpatterns = [
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name="about"),
 
     # REST-API
-    url(r'^api/v1/', include('authentication.urls')),
-    url(r'^api/v1/', include(router.urls)),
+    url(r'^v1/', include('authentication.urls')),
+    url(r'^v1/', include(router.urls)),
 ]
 
 if settings.DEBUG:
