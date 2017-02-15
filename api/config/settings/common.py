@@ -170,7 +170,7 @@ STATICFILES_FINDERS = (
 # MEDIA CONFIGURATION
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#media-root
-STATIC_ROOT = '/home/danykbas/webapps/mimtum_media/'
+MEDIA_ROOT = '/home/danykbas/webapps/mimtum_media/'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#media-url
 MEDIA_URL = '/media/'
